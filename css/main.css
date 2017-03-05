@@ -1,0 +1,68 @@
+:root {
+  --default: #000000;  
+}
+body {
+  background-color: var(--default);
+  font-family: 'Dosis', sans-serif; 
+}	
+h1 {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 800;
+  margin: 2px;
+}
+h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h4:before {
+  content: " \0336 ";  
+  margin-right: 10px;
+  }
+blockquote {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 42px;
+  margin: 0;
+  border-left: none;
+}
+.container {
+  padding: 100px 0;
+}
+.main { 
+	background-color: #ffffff;
+  color: var(--default);
+	border-radius: 12px;
+	padding: 30px 20px 0px 20px;
+}
+.main > div {
+  margin: 0px 0 10px 0;
+}
+#quoteBox .btn {
+  background-color: var(--default);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 12px;
+  outline: none;
+  padding: 10px 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
+    0 3px 6px rgba(0,0,0,0.23);
+  transition: all 0.2s ease-in-out;
+}
+#quoteBox .btn:hover{
+  color: #ffffff;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22); 
+  transition: all 0.2s ease-in-out;
+}
+.quote {
+  text-align: center; 
+}
+.quote i {
+  font-size: 108px;
+}
+#quote-content {
+  margin: 10px 0 30px 0;
+}
