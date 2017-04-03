@@ -7,7 +7,7 @@ body {
 }	
 h1 {
   color: #ffffff;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 800;
   margin: 2px;
 }
@@ -26,15 +26,19 @@ blockquote {
   line-height: 42px;
   margin: 0;
   border-left: none;
+  padding: 0px 10px 10px 10px;
 }
 .container {
-  padding: 100px 0;
+  padding: 20px 0 30px 0;
 }
 .main { 
 	background-color: #ffffff;
   color: var(--default);
 	border-radius: 12px;
-	padding: 30px 20px 0px 20px;
+	padding: 20px 0px 0px 0px;
+}
+.main > div:first-child {
+    margin: 0px 0 30px 0;
 }
 .main > div {
   margin: 0px 0 10px 0;
@@ -61,8 +65,36 @@ blockquote {
   text-align: center; 
 }
 .quote i {
-  font-size: 108px;
+  font-size: 76px;
+  margin: 0px 0 0 0;
 }
 #quote-content {
-  margin: 10px 0 30px 0;
+  margin: 0px 0 0 0;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 62em) {  /* 992 / 16 = 62em */
+  h1 {
+    font-size: 56px;
+  }
+  .container {
+    padding: 100px 0;
+  }
+  .main {
+    padding: 30px 20px 0px 20px;
+  }
+  .quote i {
+    font-size: 108px;
+  }
+  #quote-content {
+    margin: 10px 0 30px 0;
+  }
+  blockquote {
+    padding: 10px 20px;
+  } 
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 75em) { /* 1200 / 16 = 75em */
+  
 }
